@@ -94,7 +94,9 @@ class SecondsSeparatedDigit extends BaseDigitsSeparated {
       child: Row(
         mainAxisSize: MainAxisSize.min,
         mainAxisAlignment: MainAxisAlignment.center,
-        children: [firstDigit, secondDigit],
+        children: textDirection.isRtl
+            ? [secondDigit, firstDigit]
+            : [firstDigit, secondDigit],
       ),
     );
 

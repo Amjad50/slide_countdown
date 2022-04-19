@@ -78,8 +78,8 @@ class MinutesDigit extends BaseDigits {
     List<Widget> children = textDirection.isRtl
         ? [
             separator,
-            firstDigit,
             secondDigit,
+            firstDigit,
           ]
         : [
             firstDigit,

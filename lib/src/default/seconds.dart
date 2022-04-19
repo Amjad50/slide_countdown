@@ -74,8 +74,8 @@ class SecondsDigit extends BaseDigits {
     final children = textDirection.isRtl
         ? [
             separator,
-            firstDigit,
             secondDigit,
+            firstDigit,
           ]
         : [
             firstDigit,
